@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Order">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/logounpam" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Masukan nama anda"
+            android:id="@+id/edt_name"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Meja No"
+            android:id="@+id/edt_meja"
+            android:inputType="text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textSize="25dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/AyamBakar_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Ayam Bakar"/>
+            <Button
+                android:layout_width="48dp"
+                android:layout_marginStart="130dp"
+                android:onClick="increment_AyamBakar"
+                android:text="+"
+
+                android:layout_height="48dp" />
+            <TextView
+                android:textColor="#212121"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:id="@+id/quantity_textview_AyamBakar"
+                android:textSize="25dp"/>
+            <Button
+                android:layout_width="48dp"
+                android:onClick="decrement_AyamBakar"
+                android:text="-"
+
+                android:layout_height="48dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/AyamGoreng_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Ayam Goreng"/>
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_marginStart="115dp"
+                android:onClick="increment_AyamGoreng"
+                android:text="+"
+                android:layout_height="48dp" />
+            <TextView
+                android:textColor="#212121"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:id="@+id/quantity_textview_AyamGoreng"
+                android:textSize="25dp"/>
+            <Button
+                android:layout_width="48dp"
+                android:onClick="decrement_AyamGoreng"
+                android:text="-"
+                android:layout_height="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/AyamKremes_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Ayam Kremes"/>
+            <Button
+                android:layout_width="48dp"
+                android:layout_marginStart="110dp"
+                android:onClick="increment_AyamKremes"
+                android:text="+"
+
+                android:layout_height="48dp" />
+            <TextView
+                android:textColor="#212121"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:id="@+id/quantity_textview_AyamKremes"
+                android:textSize="25dp"/>
+            <Button
+                android:layout_width="48dp"
+                android:onClick="decrement_AyamKremes"
+                android:text="-"
+
+                android:layout_height="48dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Item"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#212121"
+            android:id="@+id/quantity_textview"
+            android:onClick="TotalQuantity"
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#212121"
+            android:id="@+id/price_textview"
+            android:textSize="25dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:onClick="Submitorder"
+            android:layout_height="wrap_content"
+            android:text="Order"/>
+    </LinearLayout>
+</ScrollView>

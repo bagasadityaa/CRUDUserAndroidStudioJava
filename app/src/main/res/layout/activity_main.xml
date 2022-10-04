@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logounpam"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="580dp"
+        android:layout_marginEnd="100dp"/>
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="330dp"
+        android:src="@drawable/iconprofile" />
+
+    <ImageView
+        android:id="@+id/imgKereta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="350dp"
+        android:src="@drawable/img_1" />
+
+    <ImageView
+        android:id="@+id/imgToko"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/img" />
+
+    <ImageView
+        android:id="@+id/imgHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_3"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="25dp"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:layout_marginTop="670dp"
+        />
+</RelativeLayout>
